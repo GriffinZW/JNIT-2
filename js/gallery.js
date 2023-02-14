@@ -115,6 +115,12 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 
 $(document).ready( function() {
     fetchJSON();
+    $('#nextPhoto').position({
+        my:'right bottom', 
+        at:'right bottom', 
+        of:'#nav'
+    })
+
     // This initially hides the photos' metadata information
     // $('.details').eq(0).hide();
     
@@ -152,4 +158,3 @@ function GalleryImage() {
     
 }
 
-S
