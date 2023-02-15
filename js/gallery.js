@@ -121,6 +121,12 @@ $(document).ready( function() {
         of:'#nav'
     })
 
+    $("#nextPhoto").click( function (){
+        swapPhoto()
+    })
+    $("#prevPhoto").click( function (){
+        swapPhoto()
+    })
     // This initially hides the photos' metadata information
     // $('.details').eq(0).hide();
     
@@ -155,6 +161,6 @@ function GalleryImage() {
     else { $( ".moreIndicator" ).addClass( "rot90" );
            $( ".moreIndicator" ).removeClass( "rot270" );
     }
-    
+    $(".details").slideToggle("slow");
 }
 
